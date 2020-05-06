@@ -7,6 +7,7 @@ using namespace std;
 ll nCr(int n, int r)
 {
     if(n < r) return 0;
+    if(n == r || r == 0) return 1;
     int f1 = r, f2 = n-r;
     if(f2 > f1) swap(f2,f1);
     ll result = 1;
